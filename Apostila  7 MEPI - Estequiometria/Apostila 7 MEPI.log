@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  9 JAN 2026 19:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  9 JAN 2026 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"./Apostila 5 MEPI.tex"
-(Apostila 5 MEPI.tex
+**"./Apostila 7 MEPI.tex"
+(Apostila 7 MEPI.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (C:\Users\conat\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
@@ -1142,12 +1142,12 @@ Package mhchem Warning: You did not specify a 'version' option for the mhchem
 .
 
 )
-LaTeX Font Info:    Trying to load font information for T1+aer on input line 11
-1.
+LaTeX Font Info:    Trying to load font information for T1+aer on input line 10
+8.
  (C:\Users\conat\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )
-(Apostila 5 MEPI.aux
+(Apostila 7 MEPI.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 8.
 
@@ -1182,26 +1182,26 @@ Package natbib Warning: Citation `ENEM(2017)' multiply defined.
 Package natbib Warning: Citation `ENEM(2012)' multiply defined.
 
 )
-\openout1 = `"Apostila 5 MEPI.aux"'.
+\openout1 = `"Apostila 7 MEPI.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 108.
+LaTeX Font Info:    ... okay on input line 108.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1258,37 +1258,37 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 111.
- (Apostila 5 MEPI.out) (Apostila 5 MEPI.out)
+Package hyperref Info: Link coloring ON on input line 108.
+ (Apostila 7 MEPI.out) (Apostila 7 MEPI.out)
 \@outlinefile=\write4
-\openout4 = `"Apostila 5 MEPI.out"'.
+\openout4 = `"Apostila 7 MEPI.out"'.
 
 
-Package chemgreek Info: Activating mapping `default' on line 111.
+Package chemgreek Info: Activating mapping `default' on line 108.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 117
+LaTeX Font Info:    Trying to load font information for U+msa on input line 114
 .
 
 (C:\Users\conat\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 117
+LaTeX Font Info:    Trying to load font information for U+msb on input line 114
 .
 
 (C:\Users\conat\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for TS1+aer on input line 1
-23.
-LaTeX Font Info:    No file TS1aer.fd. on input line 123.
+20.
+LaTeX Font Info:    No file TS1aer.fd. on input line 120.
 
 
 LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textordfeminine' on input line 123.
+(Font)              for symbol `textordfeminine' on input line 120.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
@@ -1299,83 +1299,83 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.135 \question A
-                 quecido a 800 , o carbonato de cálcio decompõe-se em óxi...
+l.132 \question �
+                 �cido fosfórico, usado em refrigerantes do tipo “cola”...
 
 ? 
 [1
 
 {C:/Users/conat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-[3
+[3] [4
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 13\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.367 
+l.364 
       
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 09\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.367 
+l.364 
       
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 11\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.367 
+l.364 
       
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 10\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.367 
+l.364 
       
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 25\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.367 
+l.364 
       
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 24\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.367 
+l.364 
       ]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 17\)}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.368 \bibitem[ENEM(2017)]{ENEM(2017)}
+l.365 \bibitem[ENEM(2017)]{ENEM(2017)}
                                       
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 12\)}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.373 \bibitem[ENEM(2012)]{ENEM(2012)}
+l.370 \bibitem[ENEM(2012)]{ENEM(2012)}
                                       
 
 Package natbib Warning: There were multiply defined citations.
 
-[4
+[5
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 22\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.390 \end{document}
+l.387 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 20\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.390 \end{document}
+l.387 \end{document}
                     ]
 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(Apostila 5 MEPI.aux
+(Apostila 7 MEPI.aux
 
 Package natbib Warning: Citation(s) may have changed.
 (natbib)                Rerun to get citations correct.
@@ -1389,17 +1389,17 @@ L3 programming layer <2025-12-24>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `"Apostila 5 MEPI".out' has not changed.
+Package rerunfilecheck Info: File `"Apostila 7 MEPI".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32790 strings out of 467870
- 658998 string characters out of 5418356
- 1216847 words of memory out of 5000000
- 61032 multiletter control sequences out of 15000+600000
+ 32792 strings out of 467870
+ 659028 string characters out of 5418356
+ 1213788 words of memory out of 5000000
+ 61030 multiletter control sequences out of 15000+600000
  648547 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,14n,94p,556b,746s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,14n,94p,556b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\conat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1728.pk><C:/Users/conat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmb10.pfb><C:/Users/conat/AppData/Local/Programs/MiKTeX/fonts/type1/publi
@@ -1408,11 +1408,10 @@ pe1/public/amsfonts/cm/cmr12.pfb><C:/Users/conat/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/conat/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/conat/AppData/Local/P
 rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/conat/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/cona
-t/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Apostila 5 MEPI.pdf" (4 pages, 118613 bytes).
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "Apostila 7 MEPI.pdf" (5 pages, 113404 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
+ 142 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

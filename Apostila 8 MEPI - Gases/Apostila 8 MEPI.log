@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  9 JAN 2026 17:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  9 JAN 2026 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1147,7 +1147,41 @@ LaTeX Font Info:    Trying to load font information for T1+aer on input line 11
  (C:\Users\conat\AppData\Local\Programs\MiKTeX\tex/latex/ae\t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )
-No file "Apostila 8 MEPI".aux.
+(Apostila 8 MEPI.aux
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 8.
+
+
+Package natbib Warning: Citation `ENEM(2013)' multiply defined.
+
+
+Package natbib Warning: Citation `ENEM(2009)' multiply defined.
+
+
+Package natbib Warning: Citation `ENEM(2011)' multiply defined.
+
+
+Package natbib Warning: Citation `ENEM(2010)' multiply defined.
+
+
+Package natbib Warning: Citation `ENEM(2025)' multiply defined.
+
+
+Package natbib Warning: Citation `ENEM(2024)' multiply defined.
+
+
+Package natbib Warning: Citation `ENEM(2022)' multiply defined.
+
+
+Package natbib Warning: Citation `ENEM(2020)' multiply defined.
+
+
+Package natbib Warning: Citation `ENEM(2017)' multiply defined.
+
+
+Package natbib Warning: Citation `ENEM(2012)' multiply defined.
+
+)
 \openout1 = `"Apostila 8 MEPI.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
@@ -1168,6 +1202,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
 LaTeX Font Info:    ... okay on input line 111.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
 LaTeX Font Info:    ... okay on input line 111.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1202,8 +1237,6 @@ LaTeX Font Info:    ... okay on input line 111.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 111.
 
 (C:\Users\conat\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1226,6 +1259,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 111.
+ (Apostila 8 MEPI.out) (Apostila 8 MEPI.out)
 \@outlinefile=\write4
 \openout4 = `"Apostila 8 MEPI.out"'.
 
@@ -1234,7 +1268,8 @@ Package chemgreek Info: Activating mapping `default' on line 111.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 117
 .
- (C:\Users\conat\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+
+(C:\Users\conat\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 117
@@ -1266,9 +1301,7 @@ Type  H <return>  for immediate help.
                                                   
 l.135 \question A
                   quantos litros corresponde o volume de 7,5 $m^3$?
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 [1
 
 {C:/Users/conat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
@@ -1322,7 +1355,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 <to be read again> 
                    \relax 
 l.345 \bibitem[ENEM(2012)]{ENEM(2012)}
-                                       [4
+                                      
+
+Package natbib Warning: There were multiply defined citations.
+
+[4
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 22\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1351,26 +1388,14 @@ L3 programming layer <2025-12-24>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `"Apostila 8 MEPI".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"Apostila 8 MEPI".out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package lastpage Warning: Rerun to get the references right on input line 362.
-
+Package rerunfilecheck Info: File `"Apostila 8 MEPI".out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32785 strings out of 467870
- 658617 string characters out of 5418356
+ 32793 strings out of 467870
+ 658981 string characters out of 5418356
  1219831 words of memory out of 5000000
- 61034 multiletter control sequences out of 15000+600000
+ 61036 multiletter control sequences out of 15000+600000
  648884 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,14n,94p,556b,746s stack positions out of 10000i,1000n,20000p,200000b,200000s
