@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  8 JAN 2026 21:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  8 JAN 2026 22:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1304,72 +1304,73 @@ l.135 \question A
 ? 
 [1
 
-{C:/Users/conat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
+{C:/Users/conat/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+[3
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 13\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.273 
+l.337 
       
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 09\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.273 
+l.337 
       
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 11\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.273 
+l.337 
       
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 10\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.273 
+l.337 
       
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 25\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.273 
+l.337 
       
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 24\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.273 
+l.337 
       ]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 17\)}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.274 \bibitem[ENEM(2017)]{ENEM(2017)}
+l.338 \bibitem[ENEM(2017)]{ENEM(2017)}
                                       
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 12\)}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.279 \bibitem[ENEM(2012)]{ENEM(2012)}
+l.343 \bibitem[ENEM(2012)]{ENEM(2012)}
                                       
 
 Package natbib Warning: There were multiply defined citations.
 
-[3
+[4
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 22\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.296 \end{document}
+l.360 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ENEM\(20
 20\)}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.296 \end{document}
+l.360 \end{document}
                     ]
 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -1391,13 +1392,13 @@ Package rerunfilecheck Info: File `"Apostila 7 MEPI".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32766 strings out of 467870
- 658755 string characters out of 5418356
- 1211831 words of memory out of 5000000
- 61034 multiletter control sequences out of 15000+600000
+ 32792 strings out of 467870
+ 658974 string characters out of 5418356
+ 1219831 words of memory out of 5000000
+ 61036 multiletter control sequences out of 15000+600000
  648884 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,14n,94p,556b,715s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,14n,94p,556b,746s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\conat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk> <C:\Users\conat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1728.pk><C:/Users/conat/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -1406,10 +1407,11 @@ amsfonts/cm/cmb10.pfb><C:/Users/conat/AppData/Local/Programs/MiKTeX/fonts/type1
 nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/conat/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/conat/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/conat/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Apostila 7 MEPI.pdf" (3 pages, 91059 bytes).
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/conat/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "Apostila 7 MEPI.pdf" (4 pages, 107188 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
+ 136 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
