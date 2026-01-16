@@ -1,0 +1,530 @@
+% LISTA DE EXERCÍCIOS Template using "book"
+% Created by Milena Lima 
+%Email:milenascimentolima@gmail.com
+% Science Project at school 2017-FAPEAM
+% View: https://www.overleaf.com/read/syjxcffdygch
+%=======================================================
+%------------LISTA DE EXERCÍCIOS
+%=======================================================
+\documentclass[12pt,a4paper,oneside,openany]{book} 
+%=======================================================
+%-------------PACOTES 
+%=======================================================
+\usepackage[top=1cm,left=1cm,right=1.5cm,bottom=2cm]{geometry}
+\usepackage[T1]{fontenc}%Especif. a codif. de caracteres
+\usepackage{ae}%Auxílio para fontes e pdf
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}%Gerar Texto Aleatório
+\usepackage[brazil]{babel}%Traduzir para Português
+\usepackage{indentfirst}%Faz indentações em parágrafos
+\usepackage{graphicx}%Permite incluir figuras
+\usepackage{subfig} %para criar sub figuras
+\usepackage{float}% figuras
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{multirow}
+\usepackage[dvipsnames]{xcolor}%Admitir cores
+\usepackage{amsmath,amssymb,amsthm}%Incluir expressões  matemáticas, equações, teoremas, símbolos, etc
+\usepackage{lastpage}%Incluir Ficha catalográfica
+\usepackage{epigraph}%Incluir Epígrafo
+\usepackage{enumerate}
+\usepackage{enumitem}
+\newlist{questions}{enumerate}{3}
+\setlist[questions]{label=\arabic*.}
+\newcommand{\question}{\item}
+\setlist[enumerate,1]{% (
+leftmargin=*, itemsep=12pt, label={\textbf{\arabic*.)}}}
+%---
+\newlist{partes}{enumerate}{3}
+\setlist[partes]{label=(\alph*)}
+\newcommand{\parte}{\item}
+%---
+\newlist{subpartes}{enumerate}{3}
+\setlist[subpartes]{label=\roman*)}
+\newcommand{\subparte}{\item}
+%---
+\usepackage{array}
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+\usepackage[sort&compress,round,comma,authoryear]{natbib}
+\usepackage{makeidx}
+\usepackage[colorlinks=true,urlcolor=magenta,citecolor=red,linkcolor=violet,bookmarks=true]{hyperref}
+\usepackage{lscape}%Altera a orientação de uma página
+\usepackage{pdflscape}
+\usepackage{epstopdf} %converte figs eps em figs pdf
+\usepackage{booktabs}
+\usepackage{pdfpages}
+\usepackage{textcomp}
+\usepackage[many]{tcolorbox}
+\usepackage{empheq}
+\usepackage{tasks}%lista alfabética
+\pagestyle{plain}
+\usepackage{mhchem}
+%================================================================
+%------------DIGITE AQUI
+%===============================================================
+\newcommand{\orgao}{Universidade do Estado do Pará}
+\newcommand{\instituto}{Movimento de Educação Popular e Inclusiva do Jurunas}
+\newcommand{\departamento}{EEFM Arthur Porto}
+\newcommand{\curso}{Ciências da Computação}
+\newcommand{\professor}{Elias Sabát}
+\newcommand{\disciplina}{Química}
+\newcommand{\titulo}{2\textsuperscript{a} Lista de Exercícios: Bases da Química Geral}
+\newcommand{\data}{\today}
+\newcommand{\aluno}{ALUNO:}
+\newcommand{\email}{{\bf Professor: Isaias Tobelem}}
+\newcommand{\turma}{kkkkkkkkkkkkkkkkkkkkkkkkkk}
+%===========================================================
+\newcommand{\X}{\mathbf{X}}
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\Z}{\mathbf{Z}}
+\newcommand{\z}{\mathbf{z}}
+\newcommand{\y}{\boldsymbol{y}}
+\newcommand{\balpha}{\mbox{${ \bm \alpha}$}}
+\newcommand{\bmu}{\mbox{${\bm \mu}$}}
+\newcommand{\bbeta}{\mbox{${\bm \beta}$}}
+\newcommand{\bteta}{\mbox{${\bm \theta}$}}
+\newcommand{\bgama}{\mbox{${\bm \gamma}$}}
+\newcommand{\bxi}{\mbox{${\bm \xl}$}}
+\newcommand{\bvarphi}{\mbox{${ \bm \varphi}$}}
+\newcommand{\SZ}{\mbox{ $Z$}}
+\newcommand{\muz}{\mu_{z,l}}
+\newcommand{\muo}{\mu_{0,l}}
+\newcommand{\etao}{\eta_{0,l}}
+\newcommand{\etaz}{\eta_{z,l}}
+\newcommand{\xbeta}{x_{l}\bgama}
+\newcommand{\mui}{\mu_{l}}
+\newcommand{\zetaind}{\zeta \mathtt{I}_{\{s_{l} \in Z \}}} 
+\newcommand{\spz}{ s_{l} \in z}
+\newcommand{\snpz}{ s_{l} \notin z}
+\newcommand{\sps}{ s_{l} \in S}
+\newcommand{\gphi}{ \Gamma(\phi)}
+\newcommand{\scan}{ \Lambda_{z}}
+\newcommand{\gmuop}{ \Gamma(\muo\phi)}
+\newcommand{\gmuzp}{ \Gamma(\muz \phi)}
+\newcommand{\gumuop}{ \Gamma((1-\muo)\phi)}
+\newcommand{\gumuzp}{ \Gamma((1-\muz)\phi)}
+\newcommand{\dlobeta}{ \frac{\parteial l_{0}(\bgama, \phi, 0) }{\parteial \bgama}}
+\newcommand{\lz}{  l_{z}(\bgama, \phi, \tau)}
+\newcommand{\lo}{  l_{0}(\beta, \phi, 0)}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\dis}{\displaystyle}
+\linespread{1.0}%espaço entre linhas
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      CABEÇALHO                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[H]
+\centering
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l@{\extracolsep{\fill}}}
+\begin{tabular}[l]{@{}l@{}}\textbf{\orgao}\\\textbf{\instituto}\\\textbf{\departamento} \end{tabular} & \begin{tabular}[l]{@{}l@{}}\textbf{Professor: \professor}\\ {\email}\\ \textbf{Disciplina: \disciplina}\end{tabular}                                                       
+\end{tabular*}
+\end{table}
+\begin{center}
+\rule[2ex]{\textwidth}{1pt}\\
+{\Large{\titulo}}
+\end{center}
+\rule[2ex]{\textwidth}{1pt}\\
+
+\textbf{Assuntos:} Modelos Atômicos, Identificação dos Átomos, Tabela Periódica e Distribuição Eletrônica.
+
+\begin{questions}[label=\protect\circled{\bfseries\arabic*}]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      Questões                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%=========================================================
+
+\question  Thomson determinou, pela primeira vez, a relação entre a massa e a carga do elétron, o que pode ser
+considerado como a descoberta do elétron. É reconhecida
+como uma contribuição de Thomson ao modelo atômico,
+
+\begin{partes}
+	
+\parte o átomo ser indivisível.
+\parte a existência de partículas subatômicas.
+\parte os elétrons ocuparem níveis discretos de energia.
+\parte  os elétrons girarem em órbitas circulares ao redor do
+núcleo.
+\parte o átomo possuir um núcleo com carga positiva e uma
+eletrosfera.
+
+\end{partes}
+
+\question Rutherford, ao fazer incidir partículas radioativas em lâmina metálica de ouro, observou que a maioria
+das partículas atravessava a lâmina, algumas desviavam
+e poucas refletiam. Identifique, dentre as afirmações a
+seguir, aquela que não reflete as conclusões de Rutherford
+sobre o átomo
+
+\begin{partes} 
+
+\parte Os átomos são esferas maciças e indestrutíveis.
+\parte No átomo há grandes espaços vazios.
+\parte No centro do átomo existe um núcleo pequeno e
+denso.
+\parte O núcleo do átomo tem carga positiva.
+\parte Os elétrons giram ao redor do núcleo para equilibrar
+a carga positiva.
+\end{partes}
+
+\question  Eletrosfera é a região do átomo que:
+
+\begin{partes}
+
+\parte concentra praticamente toda a massa do átomo.
+\parte contém as partículas de carga elétrica positiva.
+\parte possui partículas sem carga elétrica.
+\parte permanece inalterada na formação dos íons.
+\parte tem volume praticamente igual ao volume do átomo.
+
+\end{partes}
+
+\question Isótopos radioativos são empregados no diagnóstico e tratamento de inúmeras doenças. Qual é a principal propriedade que caracteriza um elemento químico?
+
+\begin{partes}
+
+\parte número de massa
+\parte número de prótons
+\parte número de nêutrons
+\parte energia de ionização
+\parte diferença entre o número de prótons e de nêutrons
+
+\end{partes}
+
+\question  Dentre as espécies químicas:
+
+$$ B^{9}_{5}  \quad B^{10}_{5}  \quad B^{11}_{5} \qquad C^{10}_{6}  \quad C^{12}_{6} \quad C^{14}_{6} $$
+
+as que representam átomos cujos núcleos possuem 6 nêutrons são:
+
+\begin{partes}
+
+\parte $C^{10}_{6} \quad  C^{12}_{6} $
+\parte $B^{11}_{5} \quad  C^{12}_{6} $
+\parte $B^{10}_{5}  \quad  B^{11}_{5}$
+\parte $B^{9}_{5}  \quad  C^{14}_{6}$
+\parte $C^{14}_{6}  \quad B^{10}_{5}$
+
+
+\end{partes}
+
+\question  Em um átomo com 22 elétrons e 26 nêutrons,
+seu número atômico e número de massa são, respectivamente:
+
+\begin{partes}
+
+\parte 22 e 26 
+\parte 48 e 22
+ \parte 26 e 48  
+ \parte 22 e 48
+\parte  26 e 22
+
+
+\end{partes}
+
+
+\question O número de prótons, nêutrons e elétrons representados por
+$\ce{^{138}_{56}Ba^{2+}} $ é, respectivamente:
+
+\begin{partes}
+
+\parte 56, 82 e 56 
+\parte 82, 138 e 56
+\parte  56, 82 e 54 
+\parte 82, 194 e 56
+ \parte 56, 82 e 58
+
+\end{partes}
+
+
+\question  Isótopos radioativos de iodo são utilizados no diagnóstico e tratamento de problemas da tireóide, e são,
+em geral, ministrados na forma de sais de iodeto. O número de prótons, nêutrons e elétrons no isótopo 131 do $\ce{^{131}_{53}I^{-}} $ são, respectivamente:
+
+\begin{partes}
+
+\parte 53, 78 e 52
+\parte 53, 78 e 54
+ \parte  53, 131 e 53
+ \parte 131, 53 e 131
+ \parte  52, 78 e 53
+\end{partes}
+
+
+\question Um átomo possui 19 prótons, 20 nêutrons e 19 elétrons.
+Qual dos seguintes átomos é seu isótono?
+
+\begin{partes}
+
+\parte $A^{21}_{19}$
+
+\parte $B^{20}_{19}$
+
+\parte $C^{38}_{18}$
+
+\parte $D^{58}_{39}$
+
+\parte $E^{39}_{20}$
+
+\end{partes}
+
+\question Analise as seguintes afirmativas:
+
+I. Isótopos são átomos de um mesmo elemento que possuem mesmo número atômico e diferente número
+de massa.
+
+II. O número atômico de um elemento corresponde ao
+número de prótons no núcleo de um átomo.
+
+III. O número de massa corresponde à soma do número
+de prótons e do número de elétrons de um elemento.
+
+Está(ão) correta(s):
+
+\begin{partes}
+\parte apenas I.
+\parte apenas II.
+\parte apenas III.
+\parte apenas I e II.
+\parte apenas II e III
+
+\end{partes}
+
+
+\question Os implantes dentários estão mais seguros
+no Brasil e já atendem às normas internacionais de qualidade. O grande salto de qualidade aconteceu no processo de confecção dos parafusos e pinos de titânio que
+compõem as próteses. Feitas com ligas de titânio, essas
+próteses são usadas para fixar coroas dentárias, aparelhos ortodônticos e dentaduras nos ossos da mandíbula
+e do maxilar”. Jornal do Brasil, outubro, 1996.
+Considerando que o número atômico do titânio é 22,
+sua configuração eletrônica será:
+
+\begin{partes}
+
+\parte $1s^2\,2s^2\,2p^6\,3s^2\,3p^3$
+\parte $1s^2\,2s^2\,2p^6\,3s^2\,3p^5$
+\parte $1s^2\,2s^2\,2p^6\,3s^2\,3p^6\,4s^2$
+\parte $1s^2\,2s^2\,2p^6\,3s^2\,3p^6\,4s^2\,3d^2$
+\parte $1s^2\,2s^2\,2p^6\,3s^2\,3p^6\,4s^2\,3d^{10}\,4p^6$
+\end{partes}
+
+
+\question Um átomo cuja configuração ele-
+trônica é $1s^2\,2s^2\,2p^6\,3s^2\,3p^6\,4s^2$ tem como número
+atômico:
+
+\begin{partes}
+
+\parte 10 
+\parte 18  
+\parte 8
+\parte  20 
+\parte 2
+
+\end{partes}
+
+\question Qual é a distribuição eletrônica, em subníveis,
+para o cátion $Ca^{2+}$? (Dado: Ca $=$ 20.)
+
+\begin{partes}
+
+\parte $1s^2\,2s^2\,2p^6\,3s^2\,3p^6\,4s^2$
+\parte $1s^2\,2s^2\,3s^2\,3p^6\,3d^2$
+\parte $1s^2\,2s^2\,2p^6\,3s^2\,3p^6$
+\parte $1s^2\,2s^2\,2p^6\,3s^2\,3p^6\,4s^2\,3d^2$
+\parte $1s^2\,2s^2\,3s^2\,3p^4\,4s^2$
+\end{partes}
+
+\question Um átomo, cujo número atômico é 18, está classificado na Tabela Periódica como:
+
+\begin{partes}
+
+\parte metal alcalino
+\parte metal alcalino-terroso
+\parte  metal terroso
+\parte  ametal
+\parte  gás nobre
+\end{partes}
+
+\question O número atômico do elemento que se encontra
+no período III, família 3A é:
+
+\begin{partes}
+
+\item 10 
+ \item 23 
+ \item 31
+ \item 12 
+ \item 13
+
+\end{partes}
+
+\question Na classificação periódica, os elementos Ba
+(grupo 2), Se (grupo 16) e Cl (grupo 17) são conhecidos, respectivamente, como:
+
+\begin{partes}
+
+\parte alcalino, halogênio e calcogênio
+\parte alcalino-terroso, halogênio e calcogênio
+\parte alcalino-terroso, calcogênio e halogênio
+\parte alcalino, halogênio e gás nobre
+\parte alcalino-terroso, calcogênio e gás nobre
+
+\end{partes}
+
+\question Ferro (Z = 26), manganês (Z = 25) e cromo
+(Z = 24) são:
+
+\begin{partes}
+\parte metais alcalinos
+\parte metais alcalinos-terrosos
+\parte elementos de transição
+\parte lantanídios
+\parte calcogênios
+\end{partes}
+
+
+\question Um dos elementos químicos que tem se mostrado
+muito eficiente no combate ao câncer de próstata é o
+selênio (Se).
+Com base na Tabela de Classificação Periódica dos Elementos, os símbolos de elementos com propriedades químicas semelhantes ao selênio são:
+
+\begin{partes}
+\parte Cl, Br, I 
+\parte Te, S, Po 
+\parte P, As, Sb 
+\parte As, Br, Kr
+\end{partes}
+
+
+\question Um elemento neutro possui configuração eletrônica $1s^2\,2s^2\,2p^6\,3s^2\,3p^5$ Esse elemento é um:
+
+\begin{partes}
+
+\parte metal alcalino terroso.
+\parte halogênio.
+\parte metal do primeiro período de transição.
+\parte gás nobre.
+\parte elemento do grupo do nitrogênio.
+
+\end{partes}
+
+
+\question Uma distribuição eletrônica possível para
+um elemento X, que pertence à mesma família do elemento bromo, cujo número atômico é igual a 35, é:
+
+\begin{partes}
+
+\parte $1s^2\,2s^2\,2p^5$
+\parte $1s^2\,2s^2\,2p^6\,3s^2\,3p^1$
+\parte  $1s^2\,2s^2\,2p^2$
+\parte  $1s^2\,2s^2\,2p^6\,3s^1$
+\parte $1s^2\,2s^2\,2p^6\,3s^2\,3p^6\,4s^2\,3d^5$
+
+\end{partes}
+
+
+\question \citep{ENEM(2017)} Um fato corriqueiro ao se cozinhar arroz é o derramamento de parte da água de
+cozimento sobre a chama azul do fogo, mudando-a para uma chama amarela. Essa mudança de
+cor pode suscitar interpretações diversas, relacionadas às substâncias presentes na água de
+cozimento. Além do sal de cozinha (NaCl), nela se encontram carboidratos, proteínas e sais
+minerais.
+
+Cientificamente, sabe-se que essa mudança de cor da chama ocorre pela:
+
+\begin{partes}
+
+\parte reação do gás de cozinha com o sal, volatilizando gás cloro.
+\parte  emissão de fótons pelo sódio, excitado por causa da chama.
+\parte  produção de derivado amarelo, pela reação com o carboidrato.
+\parte  reação do gás de cozinha com a água, formando gás hidrogênio.
+\parte  excitação das moléculas de proteínas, com formação de luz amarela.
+
+
+\end{partes}
+
+
+\question \citep{ENEM(2018)}
+a mitologia grega, Nióbia era a filha de Tântalo, dois personagens conhecidos pelo
+sofrimento. O elemento químico de número atômico (Z) igual a 41 tem propriedades químicas e
+físicas tão parecidas com as do elemento de número atômico 73 que chegaram a ser confundidos.
+Por isso, em homenagem a esses dois personagens da mitologia grega, foi conferido a esses
+elementos os nomes de nióbio (Z = 41) e tântalo (Z = 73). Esses dois elementos químicos adquiriram
+grande importância econômica na metalurgia, na produção de supercondutores e em outras
+aplicações na indústria de ponta, exatamente pelas propriedades químicas e físicas comuns aos dois.
+
+A importância econômica e tecnológica desses elementos, pela similaridade de suas
+propriedades químicas e físicas, deve-se a
+
+\begin{partes}
+\item terem elétrons no subnível f.
+\item  serem elementos de transição interna.
+\item  pertencerem ao mesmo grupo na tabela periódica.
+\item  terem seus elétrons mais externos nos níveis 4 e 5, respectivamente.
+\item  estarem localizados na família dos alcalinos terrosos e alcalinos, respectivamente.
+\end{partes}
+
+
+
+
+
+%================================================================
+%-------------------FIM DA LISTA
+%================================================================
+\end{questions}
+%===========================================================
+%          BIBLIOGRAFIA
+%===========================================================
+\begin{thebibliography}{99}
+\thispagestyle{empty}%myheadings
+%===========================================================
+%==============Livro
+\bibitem[ENEM(2017)]{ENEM(2017)}
+[1] \textbf{ENEM 2017}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}. 
+
+\bibitem[ENEM(2009)]{ENEM(2009)}
+[2] \textbf{ENEM 2009}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}. 
+
+\bibitem[ENEM(2011)]{ENEM(2011)}
+[3] \textbf{ENEM 2011}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}. 
+
+\bibitem[ENEM(2010)]{ENEM(2010)}
+[4] \textbf{ENEM 2010}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}. 
+
+\bibitem[ENEM(2025)]{ENEM(2025)}
+[5] \textbf{ENEM 2025}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2024)]{ENEM(2024)}
+[6] \textbf{ENEM 2024}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2022)]{ENEM(2022)}
+[7] \textbf{ENEM 2022}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2020)]{ENEM(2020)}
+[8] \textbf{ENEM 2020}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2018)]{ENEM(2018)}
+[9] \textbf{ENEM 2018}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+
+%===========================================================
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,260 @@
+% LISTA DE EXERCÍCIOS Template using "book"
+% Created by Milena Lima 
+%Email:milenascimentolima@gmail.com
+% Science Project at school 2017-FAPEAM
+% View: https://www.overleaf.com/read/syjxcffdygch
+%=======================================================
+%------------LISTA DE EXERCÍCIOS
+%=======================================================
+\documentclass[12pt,a4paper,oneside,openany]{book} 
+%=======================================================
+%-------------PACOTES 
+%=======================================================
+\usepackage[top=1cm,left=1cm,right=1.5cm,bottom=2cm]{geometry}
+\usepackage[T1]{fontenc}%Especif. a codif. de caracteres
+\usepackage{ae}%Auxílio para fontes e pdf
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}%Gerar Texto Aleatório
+\usepackage[brazil]{babel}%Traduzir para Português
+\usepackage{indentfirst}%Faz indentações em parágrafos
+\usepackage{graphicx}%Permite incluir figuras
+\usepackage{subfig} %para criar sub figuras
+\usepackage{float}% figuras
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{multirow}
+\usepackage[dvipsnames]{xcolor}%Admitir cores
+\usepackage{amsmath,amssymb,amsthm}%Incluir expressões  matemáticas, equações, teoremas, símbolos, etc
+\usepackage{lastpage}%Incluir Ficha catalográfica
+\usepackage{epigraph}%Incluir Epígrafo
+\usepackage{enumerate}
+\usepackage{enumitem}
+\newlist{questions}{enumerate}{3}
+\setlist[questions]{label=\arabic*.}
+\newcommand{\question}{\item}
+\setlist[enumerate,1]{% (
+leftmargin=*, itemsep=12pt, label={\textbf{\arabic*.)}}}
+%---
+\newlist{partes}{enumerate}{3}
+\setlist[partes]{label=(\alph*)}
+\newcommand{\parte}{\item}
+%---
+\newlist{subpartes}{enumerate}{3}
+\setlist[subpartes]{label=\roman*)}
+\newcommand{\subparte}{\item}
+%---
+\usepackage{array}
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+\usepackage[sort&compress,round,comma,authoryear]{natbib}
+\usepackage{makeidx}
+\usepackage[colorlinks=true,urlcolor=magenta,citecolor=red,linkcolor=violet,bookmarks=true]{hyperref}
+\usepackage{lscape}%Altera a orientação de uma página
+\usepackage{pdflscape}
+\usepackage{epstopdf} %converte figs eps em figs pdf
+\usepackage{booktabs}
+\usepackage{pdfpages}
+\usepackage{textcomp}
+\usepackage[many]{tcolorbox}
+\usepackage{empheq}
+\usepackage{tasks}%lista alfabética
+\pagestyle{plain}
+\usepackage{mhchem}
+%================================================================
+%------------DIGITE AQUI
+%===============================================================
+\newcommand{\orgao}{Universidade do Estado do Pará}
+\newcommand{\instituto}{Movimento de Educação Popular e Inclusiva do Jurunas}
+\newcommand{\departamento}{EEFM Arthur Porto}
+\newcommand{\curso}{Ciências da Computação}
+\newcommand{\professor}{Elias Sabát}
+\newcommand{\disciplina}{Química}
+\newcommand{\titulo}{9\textsuperscript{a} Lista de Exercícios: Introdução à Orgânica}
+\newcommand{\data}{\today}
+\newcommand{\aluno}{ALUNO:}
+\newcommand{\email}{{\bf Professor: Isaias Tobelem}}
+\newcommand{\turma}{kkkkkkkkkkkkkkkkkkkkkkkkkk}
+%===========================================================
+\newcommand{\X}{\mathbf{X}}
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\Z}{\mathbf{Z}}
+\newcommand{\z}{\mathbf{z}}
+\newcommand{\y}{\boldsymbol{y}}
+\newcommand{\balpha}{\mbox{${ \bm \alpha}$}}
+\newcommand{\bmu}{\mbox{${\bm \mu}$}}
+\newcommand{\bbeta}{\mbox{${\bm \beta}$}}
+\newcommand{\bteta}{\mbox{${\bm \theta}$}}
+\newcommand{\bgama}{\mbox{${\bm \gamma}$}}
+\newcommand{\bxi}{\mbox{${\bm \xl}$}}
+\newcommand{\bvarphi}{\mbox{${ \bm \varphi}$}}
+\newcommand{\SZ}{\mbox{ $Z$}}
+\newcommand{\muz}{\mu_{z,l}}
+\newcommand{\muo}{\mu_{0,l}}
+\newcommand{\etao}{\eta_{0,l}}
+\newcommand{\etaz}{\eta_{z,l}}
+\newcommand{\xbeta}{x_{l}\bgama}
+\newcommand{\mui}{\mu_{l}}
+\newcommand{\zetaind}{\zeta \mathtt{I}_{\{s_{l} \in Z \}}} 
+\newcommand{\spz}{ s_{l} \in z}
+\newcommand{\snpz}{ s_{l} \notin z}
+\newcommand{\sps}{ s_{l} \in S}
+\newcommand{\gphi}{ \Gamma(\phi)}
+\newcommand{\scan}{ \Lambda_{z}}
+\newcommand{\gmuop}{ \Gamma(\muo\phi)}
+\newcommand{\gmuzp}{ \Gamma(\muz \phi)}
+\newcommand{\dlobeta}{ \frac{\parteial l_{0}(\bgama, \phi, 0) }{\parteial \bgama}}
+\newcommand{\lz}{  l_{z}(\bgama, \phi, \tau)}
+\newcommand{\lo}{  l_{0}(\beta, \phi, 0)}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\dis}{\displaystyle}
+\linespread{1.0}%espaço entre linhas
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      CABEÇALHO                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[H]
+\centering
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l@{\extracolsep{\fill}}}
+\begin{tabular}[l]{@{}l@{}}\textbf{\orgao}\\\textbf{\instituto}\\\textbf{\departamento} \end{tabular} & \begin{tabular}[l]{@{}l@{}}\textbf{Professor: \professor}\\ {\email}\\ \textbf{Disciplina: \disciplina}\end{tabular}                                                       
+\end{tabular*}
+\end{table}
+\begin{center}
+\rule[2ex]{\textwidth}{1pt}\\
+{\Large{\titulo}}
+\end{center}
+\rule[2ex]{\textwidth}{1pt}\\
+
+\textbf{Assuntos:} 
+
+\begin{questions}[label=\protect\circled{\bfseries\arabic*}]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                      Questões                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%=========================================================
+
+\question
+
+
+%================================================================
+\end{questions}
+%===========================================================
+%          BIBLIOGRAFIA
+%===========================================================
+\begin{thebibliography}{99}
+\thispagestyle{empty}%myheadings
+%===========================================================
+%==============Livro
+\bibitem[ENEM(2013)]{ENEM(2013)}
+[1] \textbf{ENEM 2013}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}. 
+
+\bibitem[ENEM(2009)]{ENEM(2009)}
+[2] \textbf{ENEM 2009}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}. 
+
+\bibitem[ENEM(2011)]{ENEM(2011)}
+[3] \textbf{ENEM 2011}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}. 
+
+\bibitem[ENEM(2010)]{ENEM(2010)}
+[4] \textbf{ENEM 2010}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}. 
+
+\bibitem[ENEM(2025)]{ENEM(2025)}
+[5] \textbf{ENEM 2025}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2024)]{ENEM(2024)}
+[6] \textbf{ENEM 2024}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2022)]{ENEM(2022)}
+[7] \textbf{ENEM 2022}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2020)]{ENEM(2020)}
+[8] \textbf{ENEM 2020}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2017)]{ENEM(2017)}
+[9] \textbf{ENEM 2017}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2012)]{ENEM(2012)}
+[10] \textbf{ENEM 2012}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2023)]{ENEM(2023)}
+[1] \textbf{ENEM 2013}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}. 
+
+\bibitem[ENEM(2009)]{ENEM(2009)}
+[2] \textbf{ENEM 2009}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}. 
+
+\bibitem[ENEM(2011)]{ENEM(2011)}
+[3] \textbf{ENEM 2011}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}. 
+
+\bibitem[ENEM(2010)]{ENEM(2010)}
+[4] \textbf{ENEM 2010}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}. 
+
+\bibitem[ENEM(2025)]{ENEM(2025)}
+[5] \textbf{ENEM 2025}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2024)]{ENEM(2024)}
+[6] \textbf{ENEM 2024}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2022)]{ENEM(2022)}
+[7] \textbf{ENEM 2022}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2020)]{ENEM(2020)}
+[8] \textbf{ENEM 2020}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2017)]{ENEM(2017)}
+[9] \textbf{ENEM 2017}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2012)]{ENEM(2012)}
+[10] \textbf{ENEM 2012}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2014)]{ENEM(2014)}
+[11] \textbf{ENEM 2014}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+\bibitem[ENEM(2015)]{ENEM(2015)}
+[11] \textbf{ENEM 2015}
+(Exame Nacional do Ensino Médio).
+\emph{INEP-Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira}.{Ministério da Educação}.
+
+%===========================================================
+\end{thebibliography}
+\end{document}
